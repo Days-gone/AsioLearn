@@ -11,6 +11,9 @@ cd vcpkg
 ./vcpkg install boost
 ./vcpkg integrate install
 ```
+| Attention:  
+The vcpkg install things from the github.com by using curl, so your http and https proxy should be setted up in your current shell or your ~/.bahsrc file.
+
 then we need to integrate the lib with our project.
 According to the official doc, the newest version of vcpkg has a new feature that can integrate the lib with the project automatically. But I found that it doesn't work for me. So I choose to use the older way.
 whichi is prompted by the vcpkg cli info.
