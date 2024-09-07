@@ -1,0 +1,3 @@
+{
+    "cmake.configureArgs": ["-DCMAKE_TOOLCHAIN_FILE=/home/xym/code_folder/cpp_code/vcpkg/scripts/buildsystems/vcpkg.cmake"]
+}

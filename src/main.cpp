@@ -13,6 +13,6 @@
         weight = 1.1 * weight;
         gain = gain + boost::lexical_cast<string>(weight) + ".";
         cout << gain << endl;
-        system("pause");
+        // system("pause");
         return 0;
     }

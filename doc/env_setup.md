@@ -31,5 +31,16 @@ in your VScode settings.json, add the following code:
 }
 ```
 then you can use the vscode cmake extension to build your project, without having to input the long command. However the official doc recommend a newer way to solve this problem, which is to use vcpkg.json and CMakePresets.json. I haven't tried it yet, but I will try it later.
+There is a another way to integrate the vcpkg with the project.
+By creating a directory called .vscode and adding a settings.json file in your project root directory. Adding the following code to the settings.json file.
+```json
+{
+    // change the following path to your vcpkg.cmake path
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    }
+}
+```
+Then you can use the vscode cmake extension to build your project, without having to input the long command.
 # TODO
 try the new way to integrate the vcpkg with the project.
