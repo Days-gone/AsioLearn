@@ -13,6 +13,9 @@ find_package(Boost REQUIRED)
 add_executable(AsioLearn src/main.cpp)
 add_executable(server_l3 src/lesson3/server.cpp)
 add_executable(client_l3 src/lesson3/client.cpp)
+add_executable(server_l5 src/lesson5/server.cpp src/lesson5/Server.cpp src/lesson5/Session.cpp)
+add_executable(client_l5 src/lesson5/client.cpp)
+include_directories(./include)
 
 # Link Boost libraries
 if (Boost_FOUND)
