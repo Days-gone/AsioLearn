@@ -15,6 +15,8 @@ add_executable(server_l3 src/lesson3/server.cpp)
 add_executable(client_l3 src/lesson3/client.cpp)
 add_executable(server_l5 src/lesson5/server.cpp src/lesson5/Server.cpp src/lesson5/Session.cpp)
 add_executable(client_l5 src/lesson5/client.cpp)
+add_executable(server_l6 src/lesson6/server.cpp src/lesson6/Server.cpp src/lesson6/Session.cpp)
+add_executable(client_l6 src/lesson6/client.cpp)
 include_directories(./include)
 
 # Link Boost libraries
